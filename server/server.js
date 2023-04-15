@@ -12,7 +12,8 @@ app.use(cors());
 app.use(bodyParser.json())
 const port = 3000;
 
-const uri = "mongodb+srv://thenmozhi01599:Thenmozhi1@practice.n903gft.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<username>:<password>@practice.n903gft.mongodb.net/<Database>?retryWrites=true&w=majority";
+
 
 
 const client = new MongoClient(uri,  {
